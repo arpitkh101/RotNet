@@ -281,7 +281,8 @@ class RotNetDataGenerator(Iterator):
 
             if self.rotate:
                 # get a random angle
-                rotation_angle = np.random.randint(360)
+                angles = [0,90,180,270]
+                rotation_angle = angles[np.random.randint(4)]
             else:
                 rotation_angle = 0
 
